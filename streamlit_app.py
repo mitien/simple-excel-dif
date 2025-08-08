@@ -5,9 +5,9 @@ from utils import load_excel_file, compare_excels, export_diff_to_excel
 __version__ = "0.1.0-beta"
 
 ALLOWED_EXTENSIONS = ["xlsx"]
-MAX_FILE_SIZE = 100 * 1024 * 1024  # 100MB
+MAX_FILE_SIZE = 25 * 1024 * 1024  # 100MB
 
-st.set_page_config(page_title="Simple Excel Diff Tool v {__version__}", layout="wide")
+st.set_page_config(page_title="Simple Excel Diff Tool", layout="wide")
 
 
 def init_session_state():
