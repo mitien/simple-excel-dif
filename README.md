@@ -1,19 +1,23 @@
-# 🎈 Blank app template
+# 📊 Simple Excel Diff Tool v.0.1.0-beta
 
-A simple Streamlit app template for you to modify!
+A streamlined web application for identifying differences between Excel files quickly and efficiently. Simple-excel-dif helps you compare two Excel spreadsheets and visualize the changes with an intuitive, user-friendly interface.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## 🌟 Features
 
-### How to run it on your own machine
+- **Easy-to-Use Interface**: Simple drag-and-drop or file selection for two Excel files
+- **Smart Comparison and Visual Highlighting**: Automatically  highlights changes between files for easy identification
+- **Flexible Filtering**: Filter results by any column to focus on specific data
+- **Export Capabilities**: Download comparison results as an Excel file
+- **Large File Support**: Handles files up to 100MB 
+- **Preview Mode**: View contents of both files before comparison
+ 
 
-1. Install the requirements
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## 🥺 Limitations
 
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+- Only supports .xlsx format (.xls not supported)
+- Excel internal data filters must be disabled.
+- It uses columns from the old file to compare. 
+- Newly added columns in new file will be ignored.
+- First row considered as header.
+- Huge files may require increased memory allocation
